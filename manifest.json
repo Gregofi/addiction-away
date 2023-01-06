@@ -12,7 +12,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
-      "css": ["youtube.css"]
+      "js": ["youtube.js"],
+      "run_at": "document_end"
     },
     {
       "matches": ["*://*.facebook.com/*"],
